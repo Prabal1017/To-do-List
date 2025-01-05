@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>To do list</title>
+
+<link rel="stylesheet" href="todoList.css">
+</head>
+<body>
+
+  <!-- <button onclick=" showAlert() "> Show Alert</button> -->
+
+<div class="input-grid">
+  <input placeholder="Add ToDo" class="js-input name-input" onkeydown=" if(event.key === 'Enter'){
+    addTodo()
+  }">
+  <input class="js-date date-input" type="date">
+
+  <button class="add-button" onclick=" addTodo()">Add</button>
+</div>
+
+  <!-- <div class="js-deleteAll"></div> -->
+
+  <div class="js-list"></div>
+
+
+
+  <script src="todoList.js"></script>
+</body>
+</html>
